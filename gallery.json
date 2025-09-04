@@ -1,0 +1,58 @@
+{
+  "research": {
+    "title": "Utkarsh Odisha Conclave 2025",
+    "coverImage": "Assets/Achievements/UTKARSH/14.jpeg",
+    "altText": "Scientist working in a modern biophotonics lab",
+    "images": [
+      "Assets/Achievements/UTKARSH/1.jpeg",
+      "Assets/Achievements/UTKARSH/2.jpeg",
+      "Assets/Achievements/UTKARSH/3.jpeg",
+      "Assets/Achievements/UTKARSH/4.jpeg",
+      "Assets/Achievements/UTKARSH/5.jpeg",
+      "Assets/Achievements/UTKARSH/6.jpeg",
+      "Assets/Achievements/UTKARSH/7.jpeg",
+      "Assets/Achievements/UTKARSH/8.jpeg",
+      "Assets/Achievements/UTKARSH/9.jpeg",
+      "Assets/Achievements/UTKARSH/10.jpeg",
+      "Assets/Achievements/UTKARSH/11.jpeg",
+      "Assets/Achievements/UTKARSH/12.jpeg",
+      "Assets/Achievements/UTKARSH/13.jpeg",
+      "Assets/Achievements/UTKARSH/14.jpeg",
+      "Assets/Achievements/UTKARSH/15.jpeg"
+    
+    ]
+  },
+  "prototyping": {
+    "title": "Indian Mobile Congress 2024",
+    "coverImage": "Assets/Achievements/IMC/5.jpeg",
+    "altText": "Close-up of the smartphone diagnostic device prototype",
+    "images": [
+      "Assets/Achievements/IMC/1.jpeg",
+      "Assets/Achievements/IMC/2.jpeg",
+      "Assets/Achievements/IMC/3.jpeg",
+      "Assets/Achievements/IMC/4.jpeg",
+      "Assets/Achievements/IMC/5.jpeg"
+    
+    ]
+  },
+  "collaboration": {
+    "title": "Collaborative Innovation",
+    "coverImage": "https://placehold.co/600x400/374151/a78bfa?text=Team+Collaboration",
+    "altText": "Diverse team collaborating around a whiteboard",
+    "images": [
+      "https://placehold.co/600x400/374151/a78bfa?text=Team+1",
+      "https://placehold.co/600x400/374151/a78bfa?text=Team+2",
+      "https://placehold.co/600x400/374151/a78bfa?text=Team+3",
+      "https://placehold.co/600x400/374151/a78bfa?text=Team+4"
+    ]
+  },
+  "clinical": {
+    "title": "Clinical Validation",
+    "coverImage": "https://placehold.co/600x400/4b5563/c4b5fd?text=Clinical+Trial",
+    "altText": "Healthcare professional using the device in a clinical setting",
+    "images": [
+      "https://placehold.co/600x400/4b5563/c4b5fd?text=Clinic+1",
+      "https://placehold.co/600x400/4b5563/c4b5fd?text=Clinic+2"
+    ]
+  }
+}

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>PhotoSplMeDx - Pioneering Early Cancer Detection</title>
+    <meta
+      name="description"
+      content="PhotoSplMeDx develops affordable, smartphone-based devices for the early detection of cervical and oral cancers using light and AI."
+    />
+    <meta name="theme-color" content="#111827" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+     <!-- Animated background blobs  -->
+    <div class="bg-ornaments" aria-hidden="true">
+      <div class="blob b1"></div>
+      <div class="blob secondary b2"></div>
+      <div class="blob secondary b3"></div>
+    </div>
+
+    <div class="page-wrapper">
+      <!-- Header / Navigation  -->
+      <header>
+        <div class="container">
+          <div class="nav-wrap glass" aria-label="Primary navigation">
+            <a href="index.html" class="brand" aria-label="PhotoSplMeDx Home">
+              <!-- Inline SVG logo placeholder -->
+              <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#9B59B6"/>
+                    <stop offset="100%" stop-color="#6A0DAD"/>
+                  </linearGradient>
+                </defs>
+                <!-- Ribbon-like mark  -->
+                <path d="M20 8c-6 7-6 16 2 22l-8 20 8-8 6 10 8-20c8-6 8-15 2-22-4-4-12-5-18-2z" fill="url(#g)" opacity="0.95"/>
+                <!-- Spark  -->
+                <circle cx="46" cy="10" r="4" fill="#ffffff" opacity="0.35"/>
+              </svg>
+              <div class="brand-text">
+                PhotoSplMeDx
+                <small>Light Kindles Hope</small>
+              </div>
+            </a>
+
+            <nav aria-label="Main">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+
+            <button
+              class="hamburger"
+              id="menuToggle"
+              aria-label="Toggle navigation menu"
+              aria-controls="mobileNav"
+              aria-expanded="false"
+              type="button"
+            >
+              <span class="bar" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div id="mobileNav" class="mobile-nav glass" role="dialog" aria-modal="false" aria-label="Mobile navigation">
+            <a href="#home">Home</a>
+            <a href="#mission">Mission</a>
+            <a href="#products">Products</a>
+            <a href="#technology">Technology</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <!-- Hero  -->
+        <main id="home" class="hero">
+          <div class="hero-vfx-container">
+            <canvas id="hero-canvas"></canvas>
+          </div>
+          <div class="container">
+            <div class="hero-inner reveal-on-scroll">
+              <div>
+                <div class="eyebrow">MedTech Innovation</div>
+                <h1>Pioneering Early Cancer Detection Through Light and AI.</h1>
+                <p>
+                  We are dedicated to creating accessible, non-invasive, and life-saving diagnostic tools. Our mission is to illuminate the path to a healthier future for all.
+                </p>
+                <div class="actions">
+                  <a class="btn btn-primary" href="#technology">Discover Our Technology</a>
+                  <a class="btn" id="view-team-btn-hero" href="#team">Meet The Team</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- Mission  -->
+        <section id="mission" class="section">
+          <div class="container">
+            <h2 class="section-title reveal-on-scroll">Our Mission</h2>
+            <p class="section-subtitle reveal-on-scroll">
+              To democratize diagnostics through innovation, trust, and accessibility—detecting cancer early, when treatment is most effective.
+            </p>
+
+            <div class="features">
+              <article class="card glass reveal-on-scroll" aria-label="Affordability">
+                <div class="icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H17a2 2 0 0 1 2 2v1h1.5A2.5 2.5 0 0 1 23 10.5v3A2.5 2.5 0 0 1 20.5 16H19v1a2 2 0 0 1-2 2H5.5A2.5 2.5 0 0 1 3 16.5v-9z" stroke="currentColor" stroke-opacity="0.8"/><circle cx="19.5" cy="12" r="1.2" fill="currentColor" fill-opacity="0.9"/></svg>
+                </div>
+                <h3>Affordability</h3>
+                <p>Making early cancer screening accessible to everyone, everywhere, breaking down economic barriers to healthcare.</p>
+              </article>
+
+              <article class="card glass reveal-on-scroll" aria-label="Innovation">
+                <div class="icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a8 8 0 0 1 5.7 13.7L16 18v2a2 2 0 0 1-2 2h-4v-2h4v-2l1.7-1.7A8 8 0 1 1 12 2z" stroke="currentColor" stroke-opacity="0.85"/><path d="M9 9h6M9 12h4" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <h3>Innovation</h3>
+                <p>Leveraging cutting-edge biophotonics, proprietary optics, and smartphone technology to redefine diagnostics.</p>
+              </article>
+
+              <article class="card glass reveal-on-scroll" aria-label="Impact">
+                <div class="icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12.1 20.3 5 13.6a5 5 0 0 1 7.1-7l.9.9.9-.9a5 5 0 0 1 7 7l-7 6.7a1.5 1.5 0 0 1-2.1 0z" stroke="currentColor" stroke-opacity="0.85"/></svg>
+                </div>
+                <h3>Impact</h3>
+                <p>Reducing mortality rates and improving patient outcomes through rapid, non-invasive, and highly accurate screening.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Collaborations -->
+        <section id="associations" class="section logo-carousel-section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Trusted By The Best</h2>
+                <p class="section-subtitle reveal-on-scroll">We are proud to be associated with and supported by leading institutions in technology and healthcare innovation.</p>
+                <div class="logo-scroll-banner glass">
+                    <div class="logo-scroll-content">
+                        <!-- Logos are duplicated by JS for seamless scroll -->
+                        <div class="logo-item">
+                          <a href="https://aiimsbhubaneswar.nic.in/">
+                            <img src="Assets/Logo/AIIMS_Bhubaneswar_logo.png" alt="AIIMS Logo" />
+                          </a>
+                        </div>
+                        <div class="logo-item">
+                          <a href="https://gsvmmedicalcollege.com/">
+                            <img src="Assets/Logo/GSVM_Kanpur_logo.png" alt="GSVM Kanpur Logo" />
+                          </a>
+                        </div>
+                        <div class="logo-item">
+                          <a href="https://www.ahpgic.in/">
+                            <img src="Assets/Logo/AHPG_Cuttack_Logo.png" alt="AHPG Cuttack Logo"/>
+                          </a>
+                        </div>
+                        <div class="logo-item">
+                          <a href="https://jkci.org/">
+                            <img src="Assets/Logo/JK_Kanpur_logo.png" alt="JK Kanpur Logo" />
+                          </a>
+                        </div>
+                        <div class="logo-item">
+                          <a href="https://scbmch.in/">
+                            <img src="Assets/Logo/SCB_Cuttack_logo.png" alt="SCB Cuttack Logo" />
+                          </a>
+                        </div>
+                         <div class="logo-item">
+                          <a href="https://www.aicsoa.in/">
+                            <img src="Assets/Logo/AIC_SOA_logo.png" alt="AIC SOA Logo" />
+                          </a>
+                        </div>
+                        <div class="logo-item">
+                          <a href="https://siicincubator.com/">
+                            <img src="Assets/Logo/SIIC_IIT_Kanpur_logo.png" alt="SIIC IIT Logo" />
+                          </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section">
+          <div class="container">
+            <h2 class="section-title reveal-on-scroll">Our Flagship Devices</h2>
+            <p class="section-subtitle reveal-on-scroll">Engineered for accuracy, accessibility, and ease of use in diverse clinical settings.</p>
+            <div class="products-grid">
+              <!-- Product 1: Cervi-Lite -->
+              <div class="product-showcase-card glass reveal-on-scroll">
+                <div class="product-image-container">
+                  <img src="Assets/Products/product_1.png" alt="Cervi-Lite Device">
+                </div>
+                <div class="product-content">
+                  <h3>Cervi-Lite</h3>
+                  <p>A portable, smartphone-based adapter for rapid and non-invasive cervical cancer screening. Its calibrated optics and AI-driven analysis deliver results in minutes, ideal for primary care and outreach programs.</p>
+                </div>
+              </div>
+              <!-- Product 2: OralScope -->
+              <div class="product-showcase-card glass reveal-on-scroll">
+                <div class="product-image-container">
+                  <img src="Assets/Products/product_2.jpg" alt="OralScope Device">
+                </div>
+                <div class="product-content">
+                  <h3>OralScope</h3>
+                  <p>A compact intraoral fluorescence scope designed for the early detection of oral lesions. It provides high-contrast imaging to help clinicians distinguish between healthy and potentially malignant tissue with confidence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Technology  -->
+        <section id="technology" class="section">
+          <div class="container">
+            <h2 class="section-title reveal-on-scroll">How Our Screening Tool Works</h2>
+            <div class="split">
+              <div class="reveal-on-scroll">
+                <p>
+                  Our device uses the principle of intrinsic fluorescence to analyze tissue at a cellular level. Healthy and cancerous cells emit light differently when stimulated by specific wavelengths, creating a unique “light signature.”
+                </p>
+                <p>
+                  The core of our device is a common smartphone, which captures this signature through a proprietary optical attachment. Our on-board AI algorithms then process this data in real-time, providing instant, actionable results without needing a lab.
+                </p>
+              </div>
+
+              <div class="reveal-on-scroll">
+                <div class="phone-illustration glass" role="img" aria-label="Stylized smartphone showing the diagnostic app in action">
+                  <div class="phone-notch" aria-hidden="true"></div>
+                  <div class="screen" aria-hidden="true">
+                    <div class="phone-ui">
+                        <div class="ui-header">AI Analysis</div>
+                        <div class="ui-status">STATUS: <span class="status-live">● LIVE</span></div>
+                        <div class="ui-graph">
+                            <div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b5"></div>
+                        </div>
+                        <div class="ui-result">
+                            <span>Confidence</span>
+                            <strong class="confidence-value">98.7%</strong>
+                        </div>
+                        <div class="ui-footer">Awaiting Confirmation</div>
+                    </div>
+                  </div>
+                  <div class="beam" aria-hidden="true"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Our Work in Focus</h2>
+                <p class="section-subtitle reveal-on-scroll">A glimpse into our labs, technology, and the collaborative spirit that drives us.</p>
+                <!-- MODIFIED: This grid will be populated by script.js -->
+                <div id="gallery-grid" class="gallery-grid">
+                    <!-- Gallery items will be injected here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Carousel -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Milestones & Recognition</h2>
+                <p class="section-subtitle reveal-on-scroll">We are proud of our journey and the recognition our work has received from the community.</p>
+            </div>
+            <div class="carousel-container">
+              <div class="carousel achievements-carousel glass" aria-roledescription="carousel" aria-label="Company achievements">
+                <button class="carousel-btn prev" aria-label="Previous achievement">‹</button>
+                <div class="carousel-track" role="list">
+                  <div class="carousel-slide achievement-slide" role="listitem">
+                    <div class="achievement-image-wrapper">
+                        <img src="Assets/Achievements/IEEE/WhatsApp Image 2025-08-10 at 16.15.51.jpeg" alt="Global MedTech Innovator Award">
+                    </div><br>
+                    <h3>Global MedTech Innovator Award</h3>
+                    <p class="slide-sub">Recognized for "Outstanding Contribution to Accessible Diagnostics" in 2024.</p>
+                  </div>
+                  <div class="carousel-slide achievement-slide" role="listitem">
+                    <div class="achievement-image-wrapper">
+                        <img src="Assets/Achievements/Certificate/Patent_Certificate.jpeg" alt="Patent Granted Certificate">
+                    </div><br>
+                    <h3>Patent Granted: Optical Signature Analysis</h3>
+                    <p class="slide-sub">Core technology for non-invasive screening officially patented in the US and EU.</p>
+                  </div>
+                  <div class="carousel-slide achievement-slide" role="listitem">
+                    <div class="achievement-image-wrapper">
+                        <img src="Assets/Achievements/UTKARSH/1.jpeg" alt="Graph showing clinical trial results">
+                    </div><br>
+                    <h3>Successful Phase II Clinical Trials</h3>
+                    <p class="slide-sub">Demonstrated over 95% accuracy in multi-center clinical trials, results published in The Lancet.</p>
+                  </div>
+                  <div class="carousel-slide achievement-slide" role="listitem">
+                    <div class="achievement-image-wrapper">
+                        <img src="Assets/Achievements/IMC/1.jpeg" alt="Handshake partnership logo">
+                    </div><br>
+                    <h3>Partnership with National Health Mission</h3>
+                    <p class="slide-sub">Selected as a technology partner for nationwide rural cancer screening programs.</p>
+                  </div>
+                </div>
+                <button class="carousel-btn next" aria-label="Next achievement">›</button>
+                <div class="carousel-dots" role="tablist" aria-label="Slide dots"></div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Team  -->
+        <section id="team" class="section">
+          <div class="container">
+            <h2 class="section-title reveal-on-scroll">Meet Our Core Team</h2>
+            <p class="section-subtitle reveal-on-scroll">
+              A multidisciplinary team of scientists, engineers, and clinicians committed to our shared mission.
+            </p>
+            <!-- MODIFIED: This grid will be populated by script.js -->
+            <div id="team-grid-main" class="team-grid">
+              <!-- Core team profiles will be injected here -->
+            </div>
+            <div class="team-cta reveal-on-scroll">
+                <button class="btn btn-primary" id="view-team-btn-main">View All Members</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact  -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title reveal-on-scroll">Get in Touch</h2>
+                <p class="section-subtitle reveal-on-scroll">We welcome collaborators, clinicians, and partners. Send us a message to explore how we can work together.</p>
+                <div class="contact-grid">
+                    <div class="contact-card glass reveal-on-scroll">
+                       <form id="contact-form" class="contact-form">
+                           <div class="form-group">
+                               <label for="name">Full Name</label>
+                               <input type="text" id="name" name="name" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="email">Email Address</label>
+                               <input type="email" id="email" name="email" required>
+                           </div>
+                           <div class="form-group">
+                               <label for="message">Your Message</label>
+                               <textarea id="message" name="message" rows="4" required></textarea>
+                           </div>
+                           <button type="submit" class="btn btn-primary">Send Message</button>
+                           <p id="form-message" class="form-message"></p>
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+      <!-- Detailed Team Page (Initially hidden) -->
+      <div id="team-page" class="team-page-container">
+          <div class="container">
+              <button id="back-to-main-btn" class="back-btn" aria-label="Go back to main page">
+                  &larr; Back to Home
+              </button>
+              <h1 class="team-page-title">Our Innovators</h1>
+              <p class="team-page-subtitle">The dedicated minds powering our mission to save lives through technology.</p>
+              <!-- MODIFIED: This grid will be populated by script.js -->
+              <div id="team-page-grid" class="team-page-grid">
+                  <!-- All team member cards will be injected here -->
+              </div>
+          </div>
+      </div>
+      
+      <!-- Gallery Modal Structure -->
+      <div id="gallery-modal" class="gallery-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="gallery-modal-content glass">
+            <button id="gallery-modal-close" class="gallery-modal-close" aria-label="Close gallery">&times;</button>
+            <h3 id="gallery-modal-title"></h3>
+            <div id="gallery-modal-grid" class="gallery-modal-grid">
+                <!-- Images will be injected here by JavaScript -->
+            </div>
+        </div>
+      </div>
+      
+      <!-- Lightbox Structure -->
+      <div id="lightbox" class="lightbox" aria-hidden="true">
+          <span class="lightbox-close" aria-label="Close image">&times;</span>
+          <img class="lightbox-content" id="lightbox-img" alt="Full-screen gallery image">
+      </div>
+
+      <!-- Footer -->
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="brand" aria-label="PhotoSplMeDx Home">
+                        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                            <use href="#g" />
+                            <path d="M20 8c-6 7-6 16 2 22l-8 20 8-8 6 10 8-20c8-6 8-15 2-22-4-4-12-5-18-2z" fill="url(#g)" opacity="0.95"/>
+                            <circle cx="46" cy="10" r="4" fill="#ffffff" opacity="0.35"/>
+                        </svg>
+                        <div class="brand-text">
+                            PhotoSplMeDx
+                        </div>
+                    </a>
+                    <p>Pioneering early cancer detection through the power of light and artificial intelligence. Our mission is to make life-saving diagnostics accessible to all.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="#mission">Our Mission</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>For partnerships, media, or clinical inquiries:</p>
+                    <a href="mailto:info@photosplmedx.com">info@photosplmedx.com</a>
+                    <div class="footer-socials">
+                         <a class="social-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" opacity="0.85"/><path d="M8 10v7M8 7.5v.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M12 17v-4a3 3 0 0 1 6 0v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+                         <a class="social-btn" href="#" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)" title="X (formerly Twitter)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="m4 4 11.733 16H20L8.267 4H4zm1.933 1 8.8 12.4L18.067 5H16L5.933 5z" stroke="currentColor" stroke-width="1.2"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PhotoSplMeDx Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

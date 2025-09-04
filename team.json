@@ -1,0 +1,109 @@
+[
+  {
+    "id": "ap",
+    "name": "Dr. Asima Pradhan",
+    "title": "Founder & Director",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=AP",
+    "initials": "AP",
+    "bio": "Visionary leader with a deep expertise in biophotonics and medical device development.",
+    "fullBio": "Dr. Pradhan is the driving force behind our groundbreaking technology, aiming to make diagnostics universally accessible.",
+    "isCoreTeam": true,
+    "socials": {
+      "linkedin": "#",
+      "publications": "#"
+    }
+  },
+  {
+    "id": "pkp",
+    "name": "Dr. P.K. Panigrahi",
+    "title": "Director",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=PKP",
+    "initials": "PKP",
+    "bio": "Expert in strategic planning and corporate governance for MedTech startups.",
+    "fullBio": "With over 20 years of experience, Dr. Panigrahi provides invaluable guidance on strategic planning and partnerships.",
+    "isCoreTeam": true,
+    "socials": {
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": "sm",
+    "name": "Mrs. Subrata Mishra",
+    "title": "CEO",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=SM",
+    "initials": "SM",
+    "bio": "Leads the company's operational strategy and drives our mission forward.",
+    "fullBio": "As CEO, Mrs. Mishra oversees all operational aspects of the company, ensuring we meet our strategic goals.",
+    "isCoreTeam": true,
+    "socials": {
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": "ss",
+    "name": "Mr. Shivam Shukla",
+    "title": "CTO",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=SS",
+    "initials": "SS",
+    "bio": "Architect of our AI-powered diagnostic platform and software solutions.",
+    "fullBio": "Mr. Shukla leads our technology division, focusing on building robust and scalable AI models for our devices.",
+    "isCoreTeam": true,
+    "socials": {
+      "linkedin": "#",
+      "github": "#"
+    }
+  },
+  {
+    "id": "us",
+    "name": "Dr. Urvija Sinha",
+    "title": "Business Consultant",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=US",
+    "initials": "US",
+    "bio": "Specializes in market analysis and commercialization strategies.",
+    "fullBio": "Dr. Sinha is instrumental in shaping our business strategy, focusing on market analysis and regulatory pathways.",
+    "isCoreTeam": false,
+    "socials": {
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": "yt",
+    "name": "Mr. Yashoraj Tyagi",
+    "title": "Business Advisor",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=YT",
+    "initials": "YT",
+    "bio": "Provides expert advice on business development and strategic growth.",
+    "fullBio": "Mr. Tyagi leverages his extensive industry experience to advise on key business development opportunities.",
+    "isCoreTeam": false,
+    "socials": {
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": "ans",
+    "name": "Dr. Amar Nath Sah",
+    "title": "Consultant",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=ANS",
+    "initials": "ANS",
+    "bio": "Clinical research consultant ensuring our products meet medical standards.",
+    "fullBio": "Dr. Sah provides critical insights into the clinical application and validation of our diagnostic tools.",
+    "isCoreTeam": false,
+    "socials": {
+      "linkedin": "#"
+    }
+  },
+  {
+    "id": "bbd",
+    "name": "Ms. Bhagwati B. Deo",
+    "title": "Data Analyst",
+    "image": "https://placehold.co/120x120/6a0dad/ffffff?text=BBD",
+    "initials": "BBD",
+    "bio": "Manages and interprets the complex datasets from our clinical trials.",
+    "fullBio": "Ms. Deo is at the heart of our data operations, performing the analysis that validates our technology's efficacy.",
+    "isCoreTeam": false,
+    "socials": {
+      "linkedin": "#"
+    }
+  }
+]
+
