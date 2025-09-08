@@ -1,6 +1,12 @@
 (function () {
   'use strict';
 
+    window.addEventListener("load", function() {
+  // Hide loader after page is fully loaded
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("content").style.display = "block";
+});
+
   // --- Logo Carousel ---
   function initLogoCarousel() {
       const banner = document.querySelector('.logo-scroll-banner');
@@ -355,14 +361,11 @@
 
   // --- Initialize all scripts on DOMContentLoaded ---
   document.addEventListener('DOMContentLoaded', () => {
-    // Functions that don't depend on fetched data
     initMobileNav();
-    initScrollReveal(); // Sets up the observer
+    initScrollReveal();
     initLogoCarousel();
     initContactForm();
     initCarousel('.achievements-carousel');
-    
-    // Functions that fetch data and then use the observer
     initTeamPage();
     initGallery();
   });

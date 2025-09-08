@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
      <!-- Animated background blobs  -->
     <div class="bg-ornaments" aria-hidden="true">
       <div class="blob b1"></div>
@@ -35,7 +40,7 @@
             <a href="index.html" class="brand" aria-label="PhotoSpIMeDx Home">
                <div class="logo">
                 <a href="index.html" class="brand" aria-label="PhotoSpIMeDx Home">
-                  <img src="Assets/Logo/PhotoSpIMeDx_transparent.png" alt="PhotoSpIMeDx Logo" class="logo">
+                  <img src="Assets/Logo/photospimedx_logo.png" alt="PhotoSpIMeDx Logo" class="logo">
                 </a>
                </div>
               <!-- <div class="brand-text">
@@ -84,9 +89,7 @@
       <div class="main-content">
         <!-- Hero  -->
         <main id="home" class="hero">
-          <div class="hero-vfx-container">
-            <canvas id="hero-canvas"></canvas>
-          </div>
+          <br><br><br><br>
           <div class="container">
             <div class="hero-inner reveal-on-scroll">
               <div>
@@ -96,8 +99,8 @@
                   We are dedicated to creating accessible, non-invasive, and life-saving diagnostic tools. Our mission is to illuminate the path to a healthier future for all.
                 </p>
                 <div class="actions">
-                  <a class="btn btn-primary" href="#technology">Discover Our Technology</a>
-                  <a class="btn" id="view-team-btn-hero" href="#team">Meet The Team</a>
+                  <a class="btn" href="#technology">Discover Our Technology</a>
+                  <a class="btn" href="#team">Meet The Team</a>
                 </div>
               </div>
             </div>
@@ -260,7 +263,7 @@
         <section id="gallery" class="section">
             <div class="container">
                 <h2 class="section-title reveal-on-scroll">Our Work in Focus</h2>
-                <p class="section-subtitle reveal-on-scroll">A glimpse into our labs, technology, and the collaborative spirit that drives us.</p>
+                <p class="section-subtitle reveal-on-scroll">A glimpse into our labs, technology, and the collaborative spirit that drives us. Click to view all.</p>
                 <!-- MODIFIED: This grid will be populated by script.js -->
                 <div id="gallery-grid" class="gallery-grid">
                     <!-- Gallery items will be injected here -->
@@ -397,15 +400,12 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <a href="index.html" class="brand" aria-label="PhotoSplMeDx Home">
-                        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-                            <use href="#g" />
-                            <path d="M20 8c-6 7-6 16 2 22l-8 20 8-8 6 10 8-20c8-6 8-15 2-22-4-4-12-5-18-2z" fill="url(#g)" opacity="0.95"/>
-                            <circle cx="46" cy="10" r="4" fill="#ffffff" opacity="0.35"/>
-                        </svg>
-                        <div class="brand-text">
-                            PhotoSplMeDx
-                        </div>
-                    </a>
+                       <div class="logo">
+                          <a href="index.html" class="brand" aria-label="PhotoSpIMeDx Home">
+                            <img src="Assets/Logo/photospimedx_logo.png" alt="PhotoSpIMeDx Logo" class="logo">
+                          </a>
+                        </div> 
+                    </a><br><br>
                     <p>Pioneering early cancer detection through the power of light and artificial intelligence. Our mission is to make life-saving diagnostics accessible to all.</p>
                 </div>
                 <div class="footer-links">

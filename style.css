@@ -83,6 +83,32 @@ section {
   scroll-margin-top: calc(var(--nav-height) + 24px);
 }
 
+/* <=== Loading... ===> */
+
+#loader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px; height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
 /* =========================================
          Animated Glowing Background
          ========================================= */
@@ -165,6 +191,7 @@ header {
   height: var(--nav-height);
   transition: opacity 0.3s ease; /* Added for team page transition */
 }
+
 .nav-wrap {
   display: flex;
   align-items: center;
@@ -176,7 +203,7 @@ header {
 .brand { display: flex; align-items: center; gap: 12px; }
 /* .brand-text { font-weight: 700; letter-spacing: 0.2px; }
 .brand small { display: block; font-size: 12px; color: var(--text-secondary); font-weight: 500; } */
-.logo { display: block; width: auto; height: 150px;}
+.logo { display: block; width: auto; height: 60px;}
 nav ul { display: flex; align-items: center; gap: 20px; list-style: none; }
 nav a { color: var(--text-secondary); font-weight: 500; padding: 8px 10px; border-radius: 8px; transition: all 180ms ease; }
 nav a:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.08); }
@@ -198,12 +225,9 @@ nav a:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.08);
 .hero h1 { margin: 12px 0 16px; font-size: clamp(32px, 6vw, 56px); line-height: 1.15; text-wrap: balance; text-shadow: 0 2px 20px rgba(155, 89, 182, 0.2); }
 .hero p { color: var(--text-secondary); font-size: clamp(16px, 2vw, 20px); max-width: 70ch; margin: 0 auto; }
 .actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px; justify-content: center; }
-.btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; padding: 14px 24px; font-weight: 600; cursor: pointer; border: 1px solid var(--glass-border); background: var(--glass-bg); transition: all 180ms ease; }
-.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); background: rgba(255, 255, 255, 0.08); }
-.btn-primary { position: relative; overflow: hidden; background: linear-gradient(135deg, var(--primary-purple), var(--accent-violet)); border-color: rgba(255, 255, 255, 0.15); box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) inset, 0 8px 30px rgba(155, 89, 182, 0.35); }
-.btn-primary::after { content: ""; position: absolute; inset: -100% -30% auto -30%; height: 200%; transform: rotate(25deg) translateX(-60%); background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent); transition: transform 0.6s ease; pointer-events: none; }
-.btn-primary:hover::after { transform: rotate(25deg) translateX(80%); }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2) inset, 0 12px 36px rgba(155, 89, 182, 0.5); }
+.btn { display: inline-flex;color: rgb(215, 215, 215); align-items: center; justify-content: center; border-radius: 999px; padding: 14px 24px; font-weight: 600; cursor: pointer; border: 1px solid var(--glass-border); background: linear-gradient(135deg, var(--primary-purple), var(--accent-violet)); transition: all 180ms ease; }
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-soft); background: rgba(183, 0, 255, 0.08); }
+
 
 /* =========================================
          Mission / Features Section
@@ -464,7 +488,7 @@ nav a:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.08);
 /* =========================================
          Achievements Carousel
          ========================================= */
-.carousel-container { max-width: 1000px; margin: 0 auto; position: relative; }
+.carousel-container { max-width: 1000px; margin: 0 auto; position: relative;padding: 20px; }
 .carousel { position: relative; border-radius: var(--radius-lg); overflow: hidden; padding: 20px 0;}
 .carousel-track {display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 14px; scrollbar-width: none; }
 .carousel-track::-webkit-scrollbar { display: none; }
@@ -474,7 +498,7 @@ nav a:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.08);
 .achievement-icon { font-size: 32px; margin-bottom: 12px; }
 .carousel-slide h3 { font-size: 18px; }
 .carousel-slide .slide-sub { font-size: 14px; color: var(--text-secondary); }
-.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-primary); display: grid; place-items: center; z-index: 2; cursor: pointer; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--glass-border); background: rgba(255, 255, 255, 0.464); color: var(--text-primary); display: grid; place-items: center; cursor: pointer; }
 .carousel-btn:hover { box-shadow: var(--shadow-soft); }
 .carousel-btn.prev { left: -15px; }
 .carousel-btn.next { right: -15px; }
@@ -501,12 +525,14 @@ nav a:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.08);
 .contact-grid {
     max-width: 650px;
     margin-inline: auto;
+    
 }
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin: 20px;
+    
 }
 .form-group {
     display: flex;
@@ -525,6 +551,7 @@ nav a:hover { color: var(--text-primary); background: rgba(255, 255, 255, 0.08);
     padding: 12px;
     color: var(--text-primary);
     font-family: inherit;
+    
     font-size: 15px;
     transition: border-color 200ms ease, box-shadow 200ms ease;
 }
@@ -661,5 +688,6 @@ body.prevent-scroll {
   .nav-open .hamburger .bar::before { top: 0; transform: rotate(-90deg); }
   .nav-open .hamburger .bar::after { opacity: 0; }
   .contact-grid { grid-template-columns: 1fr; }
-  .carousel-slide { min-width: 90%; }
+  .carousel-slide { min-width: 150%; }
+  .products-grid {grid-template-columns:2fr;}
 }
